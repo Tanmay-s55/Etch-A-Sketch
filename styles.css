@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    width: 650px;
+    height: 650px;
+}
+#options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#size-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2em;
+}
+
+#color-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2em;
+}
+
+#grid-16{
+    display: grid;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: repeat(16, auto);
+  }
+
+#grid-32{
+    display: grid;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: repeat(32,auto);
+    grid-template-rows: repeat(32,auto);
+  }
+
+#grid-64{
+    display: grid;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: repeat(64, auto);
+    grid-template-rows: repeat(64, auto);
+  }
+
+.grid-item{
+    background-color: lightblue;
+    border: 1px solid gray;
+    text-align: center;
+    margin: 0;
+}
+
+#default-input{
+    border-radius: 50%;
+    background-color: black;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    margin: 0px 2px;
+}
+
+.btn{
+    padding: 5px;
+    margin: 10px 2px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 5vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #F1F1F1;
+}
+
+.btn:hover{
+    border: 2px solid #F6F54D;
+}
+#color{
+    padding: 0;
+    border: none;
+}
+
+#heading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    margin: 10px 0em;
+}
+
+h2{
+    margin-right: 5px;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0.5em 0;
+}
